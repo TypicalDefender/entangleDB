@@ -5,9 +5,9 @@
 
 I'm working on creating entangleDB, a project that's all about really getting to know how databases work from the inside out. My aim is to deeply understand everything about databases, from the big picture down to the small details. It's a way for me to build a strong foundation in database.
 
-The name "entangleDB" is special because it's in honor of a friend who loves databases just as much as I do. It's a name that reflects both our passion for databases.
+The name "entangleDB" is special because it's in honor of a friend who loves databases just as much as I do. 
 
-Right now, I'm thinking about whether to use Rust or Go to build it. My main goal is to create something that's not only useful for me to learn from but also helpful for others who are interested in diving deep into how databases work. I'm hoping to make it postgresSQL compatible.
+The plan is to write the database in Rust. My main goal is to create something that's not only useful for me to learn from but also helpful for others who are interested in diving deep into how databases work. I'm hoping to make it postgresSQL compatible.
 
 ## What I am trying to build
 
@@ -96,3 +96,10 @@ SELECT department, AVG(salary) FROM employees JOIN salaries ON employees.id = sa
 -- Time-travel query
 SELECT * FROM employees AS OF SYSTEM TIME '-5m';
 ```
+
+## Learning Resources I've been using for building the database
+
+For a comprehensive list of resources that have been learning what to build in a distributed database, check out the [Learning Resources](https://github.com/TypicalDefender/entangleDB/blob/main/learning_resources.md) page.
+
+
+
