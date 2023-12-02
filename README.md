@@ -58,7 +58,7 @@ Compatibility with PostgreSQL’s wire protocol is a goal, to facilitate smooth 
 - **Advanced Indexing Strategies**: Focus is being placed on developing sophisticated indexing methods to facilitate rapid data access, especially in large datasets.
 
 
-## Example SQL Queries
+## Example SQL Queries that you will be able to execute in entangleDB
 
 ```sql
 -- Transaction example with a table creation, data insertion, and selection
