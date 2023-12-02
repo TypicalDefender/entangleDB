@@ -1,9 +1,5 @@
 # Learning Resources I've been using for building the database
 
-## Overview
-
-This document outlines the educational materials that have been instrumental in my journey of building a database. These resources range from introductory lectures and books to more specialized papers and blog posts, offering a comprehensive understanding of database internals, algorithms, and implementation techniques.
-
 ### Introductory Materials
 
 **1. Lectures by Andy Pavlo**
