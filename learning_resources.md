@@ -1,4 +1,4 @@
-# Learning Resources for Building a Database
+# Learning Resources I've been using for building the database
 
 ## Overview
 
