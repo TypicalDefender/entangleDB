@@ -43,19 +43,7 @@ Compatibility with PostgreSQL’s wire protocol is a goal, to facilitate smooth 
 
 ## Proposed Architecture
 
-### Core Architecture
 
-- **Utilizing Raft for Cluster Management**: The Raft consensus algorithm is being employed for its simplicity and efficiency in managing distributed systems.
-
-- **Building a Transactional Key/Value Store**: The foundational element of entangleDB is a high-performance, transactional key/value store, which is crucial for effective data management and transaction processing.
-
-- **Developing an SQL Query Layer**: This layer will be responsible for translating SQL queries into operational commands for the underlying key/value store.
-
-### Emphasis on Performance and Scalability
-
-- **Scalable Design for Distributed Processing**: entangleDB is being designed with scalability in mind, capable of distributing processing loads effectively across multiple nodes.
-
-- **Advanced Indexing Strategies**: Focus is being placed on developing sophisticated indexing methods to facilitate rapid data access, especially in large datasets.
 
 
 ## Example SQL Queries that you will be able to execute in entangleDB
