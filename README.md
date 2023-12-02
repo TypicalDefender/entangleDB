@@ -44,6 +44,39 @@ Compatibility with PostgreSQL’s wire protocol is a goal, to facilitate smooth 
 ## Proposed Architecture
 <img width="890" alt="Screenshot 2023-12-02 at 1 26 15 PM" src="https://github.com/TypicalDefender/entangleDB/assets/37482550/f8d262b9-618c-435d-925b-4f992076581f">
 
+## SQL Engine
+
+The SQL Engine is responsible for the intake and processing of SQL queries. It consists of:
+
+- **SQL Session**: The processing pipeline within a session includes:
+  - `Parser`: Interprets SQL queries and converts them into a machine-understandable format.
+  - `Planner`: Devises an execution plan based on the parsed input.
+  - `Executor`: Carries out the plan, accessing and modifying the database.
+
+Adjacent to the session is the:
+
+- **SQL Storage Raft Backend**: This component integrates with the Raft consensus protocol to ensure distributed transactions are consistent and resilient.
+
+## Raft Engine
+
+The Raft Engine is crucial for maintaining a consistent state across the distributed system:
+
+- **Raft Node**: This consensus node confirms that all database transactions are in sync across the network.
+- **Raft Log**: A record of all transactions agreed upon by the Raft consensus algorithm, which is crucial for data integrity and fault tolerance.
+
+## Storage Engine
+
+The Storage Engine is where the actual data is stored and managed:
+
+- **State Machine Driver**: Comprising of:
+  - `State Machine Interface`: An intermediary that conveys state changes from the Raft log to the storage layer.
+  - `Key Value Backend`: The primary storage layer, consisting of:
+    - `Bitcask Engine`: A simple, fast on-disk storage system for key-value data.
+    - `MVCC Storage`: Handles multiple versions of data for read-write concurrency control.
+
+## entangleDB Peers
+
+- interaction between multiple database instances or "peers".
 
 ## Example SQL Queries that you will be able to execute in entangleDB
 
