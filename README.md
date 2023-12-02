@@ -42,8 +42,7 @@ The SQL interface for entangleDB is intended to support a wide array of SQL func
 Compatibility with PostgreSQL’s wire protocol is a goal, to facilitate smooth integration with existing PostgreSQL setups and offer a solid alternative for database system upgrades or migrations.
 
 ## Proposed Architecture
-
-
+<img width="890" alt="Screenshot 2023-12-02 at 1 26 15 PM" src="https://github.com/TypicalDefender/entangleDB/assets/37482550/f8d262b9-618c-435d-925b-4f992076581f">
 
 
 ## Example SQL Queries that you will be able to execute in entangleDB
