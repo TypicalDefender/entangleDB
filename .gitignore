@@ -1,0 +1,6 @@
+/clusters/*/entangledb*/data
+/data
+/target
+.vscode/
+**/*.rs.bk
+.aider*
