@@ -1,5 +1,7 @@
 # Table of Contents
 - [Overview](#overview)
+- [Usage](#usage)
+- [TODO](#todo)
 - [MVCC in entangleDB](#mvcc-in-entangledb)
 - [SQL Query Execution in entangleDB](#sql-query-execution-in-entangledb)
 - [entangleDB Raft Consensus Engine](#entangledb-raft-consensus-engine)
@@ -45,6 +47,13 @@ poha
 breads
 korma
 ```
+
+## TODO
+1. Make the isolation level configurable; currently, it is set to repeatable read (snapshot).
+2. Implement partitions, both hash and range types.
+3. Utilize generics throughout in Rust, thereby eliminating the need for std::fmt::Display + Send + Sync.
+4. Consider the use of runtime assertions instead of employing Error::Internal ubiquitously.
+5. Revisit the implementation of time-travel queries
 
 ## MVCC in entangleDB
 
