@@ -101,8 +101,6 @@ SELECT * FROM employees AS OF SYSTEM TIME '-5m';
 
 For a comprehensive list of resources that have been learning what to build in a distributed database, check out the [Learning Resources](https://github.com/TypicalDefender/entangleDB/blob/main/learning_resources.md) page.
 
-![image](https://github.com/TypicalDefender/entangleDB/assets/106574498/f1dbc888-3f0e-4828-bb27-ecc956363f9c)
-
 
 
 
