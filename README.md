@@ -26,7 +26,9 @@ The name "entangleDB" is special because it's in honor of a friend who loves dat
 The plan is to write the database in Rust. My main goal is to create something that's not only useful for me to learn from but also helpful for others who are interested in diving deep into how databases work. I'm hoping to make it postgresSQL compatible.
 
 ## Usage
-cluster can be started on `localhost` ports `3201` to `3205`:
+Pre-requisite is to have the Rust compiler; follow this doc to install it [Rust compiler](https://www.rust-lang.org/tools/install) 
+
+entangledb cluster can be started on `localhost` ports `3201` to `3205`:
 
 ```
 (cd husky/cloud && ./build.sh)
@@ -36,6 +38,7 @@ A command-line client can be built and used with the node on `localhost` port `9
 
 ```
 cargo run --release --bin entanglesql
+
 Connected to EntangleDB node "5". Enter !help for instructions.
 entangledb> SELECT * FROM dishes;
 poha
