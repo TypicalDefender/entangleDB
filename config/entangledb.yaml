@@ -7,7 +7,6 @@ log_level: INFO
 listen_sql: 0.0.0.0:3205
 listen_raft: 0.0.0.0:3305
 
-
 data_dir: data
 compact_threshold: 0.2
 sync: true
