@@ -1,0 +1,17 @@
+# The node ID, peer ID/address map (empty for single node), and log level.
+id: 1
+peers: {}
+log_level: INFO
+
+# Network addresses to bind the SQL and Raft servers to.
+listen_sql: 0.0.0.0:3205
+listen_raft: 0.0.0.0:3305
+
+
+data_dir: data
+compact_threshold: 0.2
+sync: true
+
+storage_raft: bitcask
+
+storage_sql: bitcask
