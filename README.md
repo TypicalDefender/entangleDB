@@ -34,7 +34,7 @@ entangledb cluster can be started on `localhost` ports `3201` to `3205`:
 (cd husky/cloud && ./build.sh)
 ```
 
-A command-line client can be built and used with the node on `localhost` port `9605`:
+Client can be used to connect with the node on `localhost` port `9605`:
 
 ```
 cargo run --release --bin entanglesql
