@@ -1,6 +1,4 @@
 
-# entangleDB Initial Proposal
-
 ## Overview
 
 I'm working on creating entangleDB, a project that's all about really getting to know how databases work from the inside out. My aim is to deeply understand everything about databases, from the big picture down to the small details. It's a way for me to build a strong foundation in database.
@@ -8,6 +6,16 @@ I'm working on creating entangleDB, a project that's all about really getting to
 The name "entangleDB" is special because it's in honor of a friend who loves databases just as much as I do. 
 
 The plan is to write the database in Rust. My main goal is to create something that's not only useful for me to learn from but also helpful for others who are interested in diving deep into how databases work. I'm hoping to make it postgresSQL compatible.
+
+## MVCC in entangleDB
+
+![image](https://github.com/TypicalDefender/entangleDB/assets/106574498/0a923e2d-75fc-469e-9ce7-504af45c73c7)
+
+## SQL Query Execution in entangleDB
+![image](https://github.com/TypicalDefender/entangleDB/assets/106574498/a90fc90c-91e7-4ee8-a06f-887629a82401)
+
+## entangleDB Raft Consensus Engine
+![image](https://github.com/TypicalDefender/entangleDB/assets/106574498/a56f02b9-d172-4ab3-8883-230d7b1326b4)
 
 ## What I am trying to build
 
